@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Link Formatter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Newsletter Link Formatter</h1>
+
+        <div class="section">
+            <h2>Step 1: Input URLs</h2>
+            <textarea id="urlsInput" placeholder="Paste one URL per line..."></textarea>
+            <button id="fetchTitlesButton">Fetch Titles & Prepare</button>
+            <div id="loadingMessage" style="display:none; margin-top:10px;">Fetching titles, please wait...</div>
+        </div>
+
+        <div class="section" id="linkEditorSection" style="display:none;">
+            <h2>Step 2: Review Titles & Segments</h2>
+            <p><em>Review the fetched titles (edit if needed). The app will auto-segment based on rules.</em></p>
+            <div id="linkEditorArea">
+                </div>
+            <button id="generateHtmlButton">Generate Newsletter HTML</button>
+        </div>
+
+        <div class="section" id="outputSection" style="display:none;">
+            <h2>Step 3: Formatted Output</h2>
+            <h3>Preview:</h3>
+            <div id="outputPreview" class="preview-box"></div>
+            <h3>HTML Code:</h3>
+            <textarea id="outputHtml" readonly></textarea>
+            <button id="copyHtmlButton">Copy HTML to Clipboard</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

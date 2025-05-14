@@ -1,0 +1,91 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.section {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+textarea {
+    width: 98%;
+    padding: 10px;
+    min-height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+button {
+    display: inline-block;
+    background: #5cb85c;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #4cae4c;
+}
+
+#linkEditorArea .link-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+#linkEditorArea .link-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#linkEditorArea .link-item input[type="text"],
+#linkEditorArea .link-item input[type="url"] {
+    width: calc(100% - 22px);
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.preview-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    min-height: 50px;
+    background-color: #fdfdfd;
+    border-radius: 4px;
+}
+
+.preview-box p {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
